@@ -32,6 +32,7 @@ echo -e "${GREEN}>>> downloading reject-list.txt files...${NC}"
 curl -L -o reject-list.txt.new $REJECT_LIST
 
 echo -e "${GREEN}>>> delete old  files...${NC}"
+
 rm -f geoip.dat geosite.dat direct-list.txt proxy_list.txt reject-list.txt
 mv geoip.dat.new geoip.dat
 mv geosite.dat.new geosite.dat
